@@ -552,3 +552,20 @@ a {
     font-family: 'IBM Plex Mono', monospace;
     color: white;
 }
+
+.incompatible {
+    color: black;
+}
+
+/*
+Informs user of incompatible screen size after this size
+*/
+@media only screen and (max-width: 1073px), screen and (max-height: 750px){
+
+    header {
+        visibility: hidden;
+    }
+    main {
+        visibility: hidden;
+    }
+}
