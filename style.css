@@ -555,6 +555,19 @@ a {
 
 .incompatible {
     color: black;
+    animation: loadDelay 2.5s;
+}
+
+@keyframes loadDelay {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /*
