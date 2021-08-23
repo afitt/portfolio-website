@@ -7,10 +7,12 @@ let slide = function(event) {
     //Determines scroll direction and avoids case where wheelDelta is 0
     if (event.wheelDelta < 0) {
         info.style.top = "0";
+        document.body.style.overflowY = "scroll";
     }
 
-    else if (event.wheelDelta > 0) {
+    else if (event.wheelDelta > 0 && window.pageYOffset == 0) {
         info.style.top = "100%";
+        document.body.style.overflowY = "hidden";
     }
 }
 
@@ -36,5 +38,3 @@ document.addEventListener("wheel", slide);
 for(let i = 0; i < expandButtons.length; i++) {
     expandButtons[i].addEventListener("click", focusContent);
 }
-
-document.addEventListener("mouseover", makeVisible);
