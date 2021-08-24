@@ -226,7 +226,7 @@ main {
 
 @keyframes translate1 {
     0%   {
-        transform: translateY(-5%);
+        transform: translateY(-15%);
     }
     100% {
         transform: translateY(145%);
